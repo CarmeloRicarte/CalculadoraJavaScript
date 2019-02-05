@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora con JavaScript</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <form action="">
+        <label for="num1">Número 1:</label>
+            <input type="text" id="numero1" required>
+            <p>+ - * /</p>
+            <label for="num2">Número 2:</label>
+            <input type="text" id="numero2" required>
+            <p>=</p>
+            <input type="text" id="resultado" readonly>
+            <input type="button" onclick="suma()" class="btn" value="+">
+            <input type="button" onclick="resta()" class="btn" value="-">
+            <input type="button" onclick="multiplicacion()" class="btn" value="*">
+            <input type="button" onclick="division()" class="btn" value="/">
+        </form>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+
+</html>
